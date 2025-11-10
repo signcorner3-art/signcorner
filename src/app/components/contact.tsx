@@ -121,7 +121,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="bg-black p-20 mx-auto">
       <h2 className="text-3xl font-bold text-center text-white">LEAVE US YOUR INFO</h2>
       <p className="italic text-gray-400 mb-10 text-center">
         and we will get back to you.
