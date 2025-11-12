@@ -6,21 +6,24 @@ import Boxes from "./components/Boxes";
 import AnimatedHeader from "./components/Box";
 import ContactForm from "./components/contact";
 import Header from "./components/Header";
+import Footer from "./components/Footerx";
 
 
 
 
 const HomePage: React.FC = () => {
-   console.log("CLIENT reCAPTCHA site key ko:", process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY);
-
+    
   return (
     <div>
-      <p>CLIENT reCAPTCHA site key: {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}</p>
+     
 
       <Header/>  
       <Hero/>
       <Boxes/>
       <ContactForm/>
+      <Footer/>
+      
+
  
     </div>
   );

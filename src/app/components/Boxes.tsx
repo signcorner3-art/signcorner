@@ -63,25 +63,25 @@ export default function Boxes() {
       <Box
         text="ABOUT US"
         imageSrc="/asset/picture/img100.jpg"
-        link="/about"
+        link="../about"
         height="h-[400px]" // 🔥 You can freely adjust height now
       />
       <Box
         text="WHAT WE DO & SERVICES"
         imageSrc="/asset/picture/img101.jpg"
-        link="/contact"
+        link="../what-to-do"
         height="h-[400px]"
       />
       <Box
         text="OUR TRUSTED PARTNERS"
         imageSrc="/asset/picture/img102.jpg"
-        link="/services"
+        link="../trusted-partner"
         height="h-[400px]"
       />
       <Box
         text="CONTACT US"
         imageSrc="/asset/picture/img104.jpg"
-        link="/services"
+        link="../contact-us"
         height="h-[400px]"
       />
     </div>

@@ -51,8 +51,8 @@ export async function POST(req: Request) {
 
     const mailOptions = {
       from: `"SignCorner Contact Form" <${user}>`,
-      to: user,
-      subject: `New Contact: ${name || "No name"}`,
+      to: [user],
+      subject: `Info - New Contact Form Submission: ${name || "No name"}`,
       text: `
 Name: ${name}
 Email: ${email}

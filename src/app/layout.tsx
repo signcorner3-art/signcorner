@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import CursorFollower from "../app/components/CursorFollower";
 
 export const metadata: Metadata = {
-  title: "Custom Cursor Follower",
-  description: "Smooth white ring cursor follower effect",
+  title: "SingCorner",
+  description: "Your Brand Visibility Partner",
 };
 
 export default function RootLayout({
