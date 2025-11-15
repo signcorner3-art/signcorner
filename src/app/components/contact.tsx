@@ -121,7 +121,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-black p-20 mx-auto">
+    <div className="bg-gray-300 p-20 mx-auto">
       <h2 className="text-3xl font-bold text-center text-white">LEAVE US YOUR INFO</h2>
       <p className="italic text-gray-400 mb-10 text-center">
         and we will get back to you.
@@ -206,7 +206,7 @@ export default function ContactForm() {
             onDrop={handleDrop}
             className={`border-2 border-dashed rounded-md py-10 text-center transition-all duration-300 cursor-pointer ${isDragging
               ? "bg-blue-900 border-blue-400"
-              : "bg-[#1c1c1c] border-gray-400"
+              : "bg-gray-400 border-gray-400"
               }`}
           >
             <p className="font-bold text-lg text-white">Drag & Drop Files Here</p>

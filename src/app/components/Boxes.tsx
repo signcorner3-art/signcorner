@@ -59,7 +59,7 @@ const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-80" }) => {
 
 export default function Boxes() {
   return (
-    <div className="grid grid-cols-2 gap-14 p-14 bg-[#0b0b0b]">
+    <div className="grid grid-cols-2 gap-14 p-14 bg-gray-300">
       <Box
         text="ABOUT US"
         imageSrc="/asset/picture/img100.jpg"

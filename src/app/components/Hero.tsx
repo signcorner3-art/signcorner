@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div>
 
-    <section className="h-full w-full p-10 flex flex-col items-center justify-center bg-[#0b0b0b] text-white text-center">
+    <section className="h-full w-full p-10 flex flex-col items-center justify-center bg-gray-300 text-white text-center">
             {/* Main Heading */}
       <h1
         className="text-[10px] sm:text-[20px] md:text-[90px] font-bold tracking-tight text-transparent

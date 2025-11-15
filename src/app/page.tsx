@@ -1,15 +1,8 @@
 import React from "react";
 import Hero from "./components/Hero";
-import Image from "next/image";
-
 import Boxes from "./components/Boxes";
-import AnimatedHeader from "./components/Box";
 import ContactForm from "./components/contact";
-import Header from "./components/Header";
-import Footer from "./components/Footerx";
-
-// hello word
-
+import BackToTopButton from "./components/BackToTopButton";
 
 const HomePage: React.FC = () => {
     
@@ -17,14 +10,14 @@ const HomePage: React.FC = () => {
     <div>
      
 
-      <Header/>  
+
       <Hero/>
       <Boxes/>
       <ContactForm/>
-      <Footer/>
+
       
 
- 
+ <BackToTopButton />
     </div>
   );
 
