@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import BackToTopButton from "../components/BackToTopButton";
+import ContactForm from "../components/contact";
 
 
 export default function AboutPage() {
@@ -88,6 +89,8 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           {/* Uncomment the line below to show image gallery */}
           {/* <ImageGalleryWithLightbox images={images} /> */}
+          <ContactForm />
+          <BackToTopButton />
         </div>
       </section>
     </div>
