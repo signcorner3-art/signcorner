@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
 
       <Hero/>
       <Boxes/>
-      <ContactForm/>
+     
 
       
 

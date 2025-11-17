@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           </Link>
         </p>
 {/* social media */}
-        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-3">
+        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-items-end sm:justify-start space-x-3">
           <Link href="https://www.facebook.com/" 
           target="_blank"
           rel="noopener noreferrer"

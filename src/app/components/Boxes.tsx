@@ -9,10 +9,11 @@ interface BoxProps {
   imageSrc: string;
   link: string;
   height?: string; // optional custom height
+  width?: string;
 }
 
 
-const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-80" }) => {
+const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-[400px]", width="w-[400px]" }) => {
   return (
     <Link href={link}>
       {/* ✅ relative is critical for next/image fill to work */}
@@ -39,7 +40,7 @@ const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-80" }) => {
             group-hover:outline
             group-hover:outline-2
             group-hover:outline-white
-            group-hover:outline-offset-[-2px]
+            group-hover:outline-offset-[-4px]
           "
         >
           <h2

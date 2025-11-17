@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 
 import { Phone } from "lucide-react";
+import ContactForm from '../components/contact';
+import BackToTopButton from '../components/BackToTopButton';
 
 
 const contactus = () => {
@@ -50,7 +52,14 @@ const contactus = () => {
 
       </div>
     </section>
-
+<div>
+ <ContactForm />
+</div>
+{/* contact farm div */}
+<div>
+<BackToTopButton />
+</div>
+{/* back button end */}
 
     </div>
   )

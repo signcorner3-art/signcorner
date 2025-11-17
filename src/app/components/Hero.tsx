@@ -6,13 +6,13 @@ export default function Hero() {
   return (
     <div>
 
-    <section className="h-full w-full p-10 flex flex-col items-center justify-center bg-gray-300 text-white text-center">
+    <section className="h-full w-full p-10 flex flex-col items-center justify-center bg-gray-300 text-black text-center">
             {/* Main Heading */}
       <h1
         className="text-[10px] sm:text-[20px] md:text-[90px] font-bold tracking-tight text-transparent
-                   stroke-1px] stroke-white"
+                   stroke-1px] stroke-black"
         style={{
-          WebkitTextStroke: "1px white",
+          WebkitTextStroke: "2px black",
           WebkitTextFillColor: "transparent",
         }}
       >
