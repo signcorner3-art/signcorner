@@ -8,19 +8,24 @@ interface BoxProps {
   text: string;
   imageSrc: string;
   link: string;
-  height?: string; // optional custom height
+  height?: string;
   width?: string;
 }
 
-
-const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-[400px]", width="w-[400px]" }) => {
+const Box: React.FC<BoxProps> = ({
+  text,
+  imageSrc,
+  link,
+  // 🔥 Responsive height — keep rectangle shape
+  height = "h-[260px] sm:h-[300px] md:h-[350px] lg:h-[400px]",
+  width = "w-full",
+}) => {
   return (
     <Link href={link}>
-      {/* ✅ relative is critical for next/image fill to work */}
       <div
-        className={`relative w-full ${height} group overflow-hidden rounded-2xl cursor-pointer`}
+        className={`relative ${width} ${height} group overflow-hidden rounded-2xl cursor-pointer`}
       >
-        {/* Image (disappears on hover) */}
+        {/* Image */}
         <Image
           src={imageSrc}
           alt={text}
@@ -28,7 +33,7 @@ const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-[400px]", w
           className="object-cover rounded-2xl transition-opacity duration-500 group-hover:opacity-0"
         />
 
-        {/* Hover Background */}
+        {/* Hover Layer */}
         <div
           className="
             absolute inset-[2px]
@@ -36,6 +41,7 @@ const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-[400px]", w
             rounded-2xl
             flex items-center justify-center
             transition-all duration-500
+
             group-hover:bg-black
             group-hover:outline
             group-hover:outline-2
@@ -45,8 +51,8 @@ const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-[400px]", w
         >
           <h2
             className="
-              text-white text-2xl font-semibold 
-              opacity-0 group-hover:opacity-100 
+              text-white text-xl md:text-2xl font-semibold
+              opacity-0 group-hover:opacity-100
               transition-opacity duration-500
             "
           >
@@ -60,31 +66,33 @@ const Box: React.FC<BoxProps> = ({ text, imageSrc, link, height = "h-[400px]", w
 
 export default function Boxes() {
   return (
-    <div className="grid grid-cols-2 gap-14 p-14 bg-gray-300">
-      <Box
-        text="ABOUT US"
-        imageSrc="/asset/picture/img100.jpg"
-        link="../about"
-        height="h-[400px]" // 🔥 You can freely adjust height now
-      />
-      <Box
-        text="WHAT WE DO & SERVICES"
-        imageSrc="/asset/picture/img101.jpg"
-        link="../what-to-do"
-        height="h-[400px]"
-      />
-      <Box
-        text="OUR TRUSTED PARTNERS"
-        imageSrc="/asset/picture/img102.jpg"
-        link="../trusted-partner"
-        height="h-[400px]"
-      />
-      <Box
-        text="CONTACT US"
-        imageSrc="/asset/picture/img104.jpg"
-        link="../contact-us"
-        height="h-[400px]"
-      />
+    <div className="bg-gray-300 p-6 sm:p-10 md:p-14">
+      {/* 🔥 Responsive grid: 1 column mobile → 2 columns tablet → 2 desktop */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <Box
+          text="ABOUT US"
+          imageSrc="/asset/picture/img100.jpg"
+          link="../about"
+        />
+
+        <Box
+          text="WHAT WE DO & SERVICES"
+          imageSrc="/asset/picture/img101.jpg"
+          link="../what-to-do"
+        />
+
+        <Box
+          text="OUR TRUSTED PARTNERS"
+          imageSrc="/asset/picture/img102.jpg"
+          link="../trusted-partner"
+        />
+
+        <Box
+          text="CONTACT US"
+          imageSrc="/asset/picture/img104.jpg"
+          link="../contact-us"
+        />
+      </div>
     </div>
   );
 }

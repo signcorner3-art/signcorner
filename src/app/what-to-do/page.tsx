@@ -1,6 +1,7 @@
 import React from 'react'
 import Boxes from '../components/Boxes'
 import Boxa from '../components/Boxa'
+import BackToTopButton from '../components/BackToTopButton'
 
 const whattodo = () => {
   return (
@@ -24,12 +25,12 @@ const whattodo = () => {
     {
       text: "Digital Signs",
       imageSrc: "/asset/picture/img102.jpg",
-      link: "../what-to-do/digital-sings",
+      link: "../what-to-do/digital-signs",
     },
     {
       text: "Display Signs",
       imageSrc: "/asset/picture/img104.jpg",
-      link: "../what-to-do/display-sings",
+      link: "../what-to-do/display-signs",
     },
     {
       text: "Llluminated signage",
@@ -68,7 +69,7 @@ const whattodo = () => {
     }
   ]}
 />
-
+<BackToTopButton />
 
 </div>
 

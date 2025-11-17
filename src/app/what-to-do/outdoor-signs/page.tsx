@@ -13,8 +13,8 @@ export default function OutdoorSings() {
 ];
 // galary data
   return (
-    <div>
-    <h1 className='text-5xl font-bold text-center underline mt-8'>Outdoor Sings</h1>
+    <div className='bg-black'>
+    <h1 className='text-5xl text-white font-bold text-center underline mt-2'>Outdoor Signs</h1>
     {/* ending dispaly main pic div */}
 <div className='py-10'>
    <ImageGalleryWithLightbox images={images} />

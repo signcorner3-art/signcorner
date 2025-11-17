@@ -4,37 +4,33 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div>
+    <section className="w-full py-16 flex flex-col items-center justify-center bg-gray-300 text-black text-center">
 
-    <section className="h-full w-full p-10 flex flex-col items-center justify-center bg-gray-300 text-black text-center">
-            {/* Main Heading */}
+      {/* Heading */}
       <h1
-        className="text-[10px] sm:text-[20px] md:text-[90px] font-bold tracking-tight text-transparent
-                   stroke-1px] stroke-black"
+        className="font-bold tracking-tight"
         style={{
+          fontSize: "clamp(32px, 7vw, 180px)",
           WebkitTextStroke: "2px black",
           WebkitTextFillColor: "transparent",
+          lineHeight: "0.9",
         }}
       >
         Your Brand Visibility Partner
       </h1>
-      
 
-      
       {/* Subheading */}
-      <p className="text-base sm:text-lg md:text-[30px] font-semibold tracking-wide mb-4">
+      <p
+        className="font-semibold mt-6"
+        style={{
+          fontSize: "clamp(16px, 2vw, 32px)",
+        }}
+      >
         Signs Corner manufactures and installs premium signage to your specifications
         <br />
-         <br />- on time - on budget - every time!
+        <br />- on time - on budget - every time!
       </p>
 
-
-
-
-      </section>
-
- 
-</div>
-    
+    </section>
   );
 }
