@@ -28,7 +28,7 @@ export default function Hero() {
       >
         Signs Corner manufactures and installs premium signage to your specifications
         <br />
-        <br />- on time - on budget - every time!
+        <br /> on time - on budget - every time!
       </p>
 
     </section>

@@ -11,12 +11,12 @@ const contactus = () => {
     <div>
 
 
-    <section className="w-full py-16 bg-gray-50">
+    <section className="w-full py-16 bg-gray-200">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         
         {/* Left side — Heading */}
         <div>
-          <h2 className="text-4xl font-bold text-gray-900 border-l-4 border-blue-600 pl-4">
+          <h2 className="text-4xl font-bold text-gray-900 border-l-4 border-red-600 pl-4">
             CONTACT US
           </h2>
 

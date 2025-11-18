@@ -14,9 +14,21 @@ export default function Designs() {
 // galary data
   return (
     <div>
-    <h1 className='text-5xl font-bold text-center underline mt-8'>Designs</h1>
+    <div className='bg-gray-50 text-center py-4'>
+        <h1
+        className="font-bold tracking-tight"
+        style={{
+          fontSize: "clamp(32px, 5vw, 90px)",
+          WebkitTextStroke: "3px black",
+          WebkitTextFillColor: "transparent",
+          lineHeight: "0.9",
+        }}
+      >
+        Design
+      </h1>
+</div>
     {/* ending dispaly main pic div */}
-<div className='py-10'>
+<div className='py-10 bg-gray-50'>
    <ImageGalleryWithLightbox images={images} />
    <BackToTopButton />
 </div>

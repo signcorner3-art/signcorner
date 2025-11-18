@@ -18,7 +18,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-800 text-black">
+    <div className="min-h-screen bg-gray-300 text-black">
       {/* Top banner image (responsive, keeps rectangle aspect) */}
       <div className="w-full">
         <div className="relative w-full h-[220px] sm:h-[320px] md:h-[420px] lg:h-[520px] xl:h-[620px] overflow-hidden">
@@ -34,7 +34,7 @@ export default function AboutPage() {
       </div>
 
       {/* About content */}
-      <section className="w-full py-12 sm:py-16 bg-gray-300">
+      <section className="w-full h-screen py-12 sm:py-16 bg-gray-300">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           {/* Left: Heading */}
           <div className="flex flex-col">
@@ -89,7 +89,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           {/* Uncomment the line below to show image gallery */}
           {/* <ImageGalleryWithLightbox images={images} /> */}
-          <ContactForm />
+          
           <BackToTopButton />
         </div>
       </section>

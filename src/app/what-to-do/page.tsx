@@ -8,6 +8,21 @@ const whattodo = () => {
   
 
 <div>
+  
+<div className='bg-gray-300 text-center py-4'>
+        <h1
+        className="font-bold tracking-tight"
+        style={{
+          fontSize: "clamp(32px, 7vw, 90px)",
+          WebkitTextStroke: "3px black",
+          WebkitTextFillColor: "transparent",
+          lineHeight: "0.9",
+        }}
+      >
+        What To Do
+      </h1>
+</div>
+
 <Boxa
   boxes={[
     {

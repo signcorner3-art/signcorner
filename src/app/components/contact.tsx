@@ -113,9 +113,9 @@ export default function ContactForm() {
 
   return (
     <div className="bg-gray-300 py-12 px-4 sm:px-6 md:px-10 lg:px-20">
-      <div className="max-w-5xl mx-auto bg-[#0b0b0b] rounded-xl p-6 sm:p-10">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white">LEAVE US YOUR INFO</h2>
-        <p className="italic text-gray-400 mb-8 text-center text-sm sm:text-base">and we will get back to you.</p>
+      <div className="max-w-5xl mx-auto bg-gray-300 rounded-xl p-6 sm:p-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900">LEAVE US YOUR INFO</h2>
+        <p className="italic text-gray-700 mb-8 text-center text-sm sm:text-base">and we will get back to you.</p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name / Email / Phone */}
@@ -126,7 +126,7 @@ export default function ContactForm() {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+              className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring--500 bg-white"
               required
             />
             <input
@@ -135,7 +135,7 @@ export default function ContactForm() {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+              className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring--500 bg-white"
               required
             />
             <input
@@ -144,13 +144,13 @@ export default function ContactForm() {
               placeholder="Your Phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+              className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring--500 bg-white"
             />
           </div>
 
           {/* Referral Source */}
           <div>
-            <label className="block text-sm font-semibold text-white mb-2">How did you hear about us?</label>
+            <label className="block text-sm font-semibold text-black mb-2">How did you hear about us?</label>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {["REFERRAL", "SOCIAL MEDIA", "GOOGLE", "OTHER"].map((source) => (
                 <button
@@ -158,7 +158,7 @@ export default function ContactForm() {
                   type="button"
                   onClick={() => setSelectedSource(source)}
                   className={`py-3 rounded-md transition-all font-semibold border ${
-                    selectedSource === source ? "bg-blue-600 text-white" : "bg-white text-black hover:bg-blue-500 hover:text-white"
+                    selectedSource === source ? "bg--600 text-white" : "bg-white text-black hover:bg--500 hover:text-white"
                   }`}
                 >
                   {source}
@@ -169,7 +169,7 @@ export default function ContactForm() {
 
           {/* Description */}
           <div>
-            <label className="block text-sm font-semibold text-white mb-2">What best describes you?</label>
+            <label className="block text-sm font-semibold text-black mb-2">What best describes you?</label>
             <div className="grid grid-cols-2 gap-3">
               {["BUSINESS / COMMERCIAL", "PERSONAL / RESIDENTIAL"].map((desc) => (
                 <button
@@ -177,7 +177,7 @@ export default function ContactForm() {
                   type="button"
                   onClick={() => setSelectedDesc(desc)}
                   className={`py-3 rounded-md transition-all font-semibold border ${
-                    selectedDesc === desc ? "bg-blue-600 text-white" : "bg-white text-black hover:bg-blue-500 hover:text-white"
+                    selectedDesc === desc ? "bg--600 text-white" : "bg-white text-black hover:bg--500 hover:text-white"
                   }`}
                 >
                   {desc}
@@ -192,7 +192,7 @@ export default function ContactForm() {
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-md border border-gray-600 bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-3 rounded-md border border-gray-600 bg-white text-black focus:outline-none focus:ring-2 focus:ring--500"
             >
               <option value="">Select Service</option>
               <option>Web Design</option>
@@ -206,13 +206,13 @@ export default function ContactForm() {
               rows={5}
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-md border border-gray-600 bg-transparent text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-3 rounded-md border border-gray-600 bg-transparent text-black placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring--500"
             />
           </div>
 
           {/* File Upload (responsive) */}
           <div>
-            <label className="block text-sm font-semibold text-white mb-2">
+            <label className="block text-sm font-semibold text-black mb-2">
               Do you have a logo file or an existing design to send to us?
             </label>
             <div
@@ -220,12 +220,12 @@ export default function ContactForm() {
               onDragLeave={handleDragLeave}
               onDrop={handleDrop}
               className={`w-full border-2 border-dashed rounded-md py-8 sm:py-10 text-center transition-all duration-300 cursor-pointer ${
-                isDragging ? "bg-blue-900 border-blue-400" : "bg-[#1c1c1c] border-gray-400"
+                isDragging ? "bg--900 border--400" : "bg-gray-400 border-gray-400"
               }`}
             >
-              <p className="font-bold text-lg text-white">Drag & Drop Files Here</p>
-              <p className="text-sm text-gray-300 my-2">or</p>
-              <label className="cursor-pointer text-blue-400 font-semibold underline inline-block">
+              <p className="font-bold text-lg text-black">Drag & Drop Files Here</p>
+              <p className="text-sm text-gray-900 my-2">or</p>
+              <label className="cursor-pointer text-gray-900 font-semibold underline inline-block">
                 Browse Files
                 <input type="file" className="hidden" onChange={handleFileChange} />
               </label>
@@ -233,7 +233,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          {/* Captcha centered */}
+          {/* Captcha cente */}
           <div className="flex justify-center">
             <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!} onChange={handleCaptcha} />
           </div>
@@ -243,14 +243,14 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full md:w-auto bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-all"
+              className="w-full md:w-auto bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition-all"
             >
               {loading ? "Sending..." : "Submit"}
             </button>
           </div>
 
           {successMessage && <p className="text-green-400 text-center">{successMessage}</p>}
-          {errorMessage && <p className="text-red-400 text-center">{errorMessage}</p>}
+          {errorMessage && <p className="text--400 text-center">{errorMessage}</p>}
         </form>
       </div>
     </div>

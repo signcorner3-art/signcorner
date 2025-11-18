@@ -14,16 +14,26 @@ interface TrustedPartnerProps {
 
 export default function TrustedPartner({ partners }: TrustedPartnerProps) {
   return (
-    <section className="w-full py-16">
-      <h2 className="text-4xl font-bold text-center mb-10">
+    <section className="w-full">
+<div className='bg-gray-300 text-center py-4'>
+        <h1
+        className="font-bold tracking-tight"
+        style={{
+          fontSize: "clamp(32px, 7vw, 90px)",
+          WebkitTextStroke: "3px black",
+          WebkitTextFillColor: "transparent",
+          lineHeight: "0.9",
+        }}
+      >
         Our Trusted Partner
-      </h2>
+      </h1>
+</div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 px-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 px-6 bg-gray-200 py-10">
         {partners.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow hover:shadow-lg transition cursor-pointer"
+            className="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-xl shadow hover:shadow-lg transition cursor-pointer"
           >
             <Image
               src={item.image}

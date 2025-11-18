@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       <div className="container px-1 py-1 mx-auto flex items-center sm:flex-row flex-col">
         <Link
           href="/" 
-          className="flex title-font font-medium items-center md:justify-start justify-center text-gray-100"
+          className="flex title-font font-medium items-center md:justify-start justify-center text-black "
         >
           <div className="w-20 h-20 bg-gray-400 rounded-full flex items-center justify-center">
        
@@ -30,15 +30,15 @@ const Footer: React.FC = () => {
           <span className="ml-3 font-bold text-xl">SignCorner</span>
         </Link>
 
-        <p className="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-100  sm:py-2 sm:mt-0 mt-4">
+        <p className="text-sm text-black  sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-black   sm:py-2 sm:mt-0 mt-4">
           © 2025 Singcorner —
           <Link
             href="https://twitter.com"
-            className="text-gray-100 ml-1 hover:text-indigo-500 transition-colors"
+            className="text-black  ml-1 hover:text-red-500 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @x-solution
+            @Cyber Next
           </Link>
         </p>
 {/* social media */}
@@ -46,27 +46,27 @@ const Footer: React.FC = () => {
           <Link href="https://www.facebook.com/" 
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-100 hover:text-indigo-500 transition-colors">
+          className="text-black  hover:text-red-500 transition-colors">
           <FaFacebookF /> 
           </Link>
 {/* ended face book code */}
           <Link href="https://x.com" 
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-100 hover:text-indigo-500 transition-colors">
+          className="text-black  hover:text-red-500 transition-colors">
           <RiTwitterXFill />
           </Link>
 {/* ended x code  */}
           <Link href="https://www.instagram.com" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="text-gray-100 hover:text-indigo-500 transition-colors">
+          className="text-black  hover:text-red-500 transition-colors">
           <FaInstagramSquare />
           </Link>
 {/* ended instagramcode  */}
           <Link href="https://www.linkedin.com" 
           target="_blank" rel="noopener noreferrer" 
-          className="text-gray-100 hover:text-indigo-500 transition-colors">
+          className="text-black hover:text-red-500 transition-colors">
           <FaLinkedin />  
           </Link>
 {/* ended linkedin code  */}
