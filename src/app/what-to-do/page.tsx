@@ -33,23 +33,23 @@ const whattodo = () => {
     },
     {
       text: "Building Signs",
-      imageSrc: "/asset/picture/img101.jpg",
+      imageSrc: "/asset/picture/Building-Signs-Landing-page-images.png",
       link: "../what-to-do/building-signs",
 
     },
     {
       text: "Digital Signs",
-      imageSrc: "/asset/picture/img102.jpg",
+      imageSrc: "/asset/picture/Digital-Signs-Landing-page-images.png",
       link: "../what-to-do/digital-signs",
     },
     {
       text: "Display Signs",
-      imageSrc: "/asset/picture/img104.jpg",
+      imageSrc: "/asset/picture/Display-Signs-Landing-page-images.png",
       link: "../what-to-do/display-signs",
     },
     {
       text: "Llluminated signage",
-      imageSrc: "/asset/picture/img104.jpg",
+      imageSrc: "/asset/picture/Illuminated-Signs-Landing-page-images.png",
       link: "../what-to-do/illuminatedsignage",
     },
     {
@@ -59,27 +59,27 @@ const whattodo = () => {
     },
     {
       text: "Office Signage",
-      imageSrc: "/asset/picture/img104.jpg",
+      imageSrc: "/asset/picture/Office-Signs-Landing-page-images.png",
       link: "../what-to-do/office-signage",
     },
     {
       text: "Outdoor Signs",
-      imageSrc: "/asset/picture/img104.jpg",
+      imageSrc: "/asset/picture/Outdoor-Signs-Landing-page-images.png",
       link: "../what-to-do/outdoor-signs",
     },
     {
       text: "Retail Signs",
-      imageSrc: "/asset/picture/img104.jpg",
+      imageSrc: "/asset/picture/Retail-Signs-Landing-page-images.png",
       link: "../what-to-do/retail-signs",
     },
     {
       text: "3D Febrication",
-      imageSrc: "/asset/picture/img104.jpg",
+      imageSrc: "/asset/picture/3D-Fabricated-Signs-Landing-Page.png",
       link: "../what-to-do/three-D-fabrication",
     },
     {
       text: "Vehicle Fleet Signs",
-      imageSrc: "/asset/picture/img104.jpg",
+      imageSrc: "/asset/picture/Vehicle-Fleet-Signs-Landing-page-images.png",
       link: "../what-to-do/vehicle-fleet-signs",
     }
   ]}
