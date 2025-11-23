@@ -13,7 +13,7 @@ export default function Trusted() {
     { image: "/asset/picture/Gosnells-Motors-gibbson-kia.svg" },
     { image: "/asset/picture/aes-logo9.svg" },
     { image: "/asset/picture/Avery-Dennison-logo.png" },
-    { image: "/asset/picture/KADAK CHAI.png" },
+    { image: "/asset/picture/kadak-chai.png" },
     { image: "/asset/picture/khabbay-logo.png" },
     { image: "/asset/picture/usta-grill-logo.png" },
     { image: "/asset/picture/jamaica-jamaica-blue-logo.png" },
