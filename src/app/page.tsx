@@ -7,17 +7,10 @@ import BackToTopButton from "./components/BackToTopButton";
 const HomePage: React.FC = () => {
     
   return (
-    <div>
-     
-
-
+  <div>
       <Hero/>
       <Boxes/>
-     
-
-      
-
- <BackToTopButton />
+      <BackToTopButton />
     </div>
   );
 
