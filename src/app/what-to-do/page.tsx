@@ -14,7 +14,7 @@ const whattodo = () => {
         className="font-bold tracking-tight"
         style={{
           fontSize: "clamp(32px, 7vw, 90px)",
-          WebkitTextStroke: "3px black",
+          WebkitTextStroke: "2px black",
           WebkitTextFillColor: "transparent",
           lineHeight: "0.9",
         }}
@@ -48,7 +48,7 @@ const whattodo = () => {
       link: "../what-to-do/display-signs",
     },
     {
-      text: "Llluminated signage",
+      text: "Illuminated signage",
       imageSrc: "/asset/picture/Illuminated-Signs-Landing-page-images.png",
       link: "../what-to-do/illuminatedsignage",
     },
